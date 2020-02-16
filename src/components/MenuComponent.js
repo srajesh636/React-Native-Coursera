@@ -2,9 +2,8 @@ import React from "react";
 import { FlatList } from "react-native";
 import { ListItem } from "react-native-elements";
 import { DISHES } from "../data/dishes";
-import { View, Text, SafeAreaView } from "react-native";
 
-class Menu extends React.Component {
+class MenuComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,4 +38,4 @@ class Menu extends React.Component {
   }
 }
 
-export default Menu;
+export default MenuComponent;
