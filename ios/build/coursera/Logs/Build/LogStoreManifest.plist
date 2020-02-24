@@ -5,6 +5,75 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>42431538-F423-487C-8B3E-FB2027192CDA</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>42431538-F423-487C-8B3E-FB2027192CDA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>coursera project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>coursera</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>604255904.37026703</real>
+			<key>timeStoppedRecording</key>
+			<real>604255905.19663596</real>
+			<key>title</key>
+			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>42431538-F423-487C-8B3E-FB2027192CDA</string>
+		</dict>
+		<key>D66C498D-2435-4E48-8290-B6D6CB063C77</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D66C498D-2435-4E48-8290-B6D6CB063C77.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>coursera project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>coursera</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>604237300.03454196</real>
+			<key>timeStoppedRecording</key>
+			<real>604237301.08988297</real>
+			<key>title</key>
+			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>D66C498D-2435-4E48-8290-B6D6CB063C77</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

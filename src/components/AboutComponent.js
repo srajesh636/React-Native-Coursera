@@ -3,6 +3,9 @@ import { Text, View } from "react-native";
 import { Card, ListItem } from "react-native-elements";
 import { LEADERS } from "../data/leaders";
 import { FlatList, ScrollView } from "react-native-gesture-handler";
+import { connect } from "react-redux";
+import { baseUrl } from "../utils/baseUrl";
+import {Loading} from "./LoadingComponent";
 
 const History = ({ data }) => (
   <Card title="Our History">
@@ -31,28 +34,55 @@ class AboutComponent extends Component {
           key={index}
           title={item.name}
           subtitle={item.description}
-          leftAvatar={{ source: require("../assets/alberto.png") }}
+          leftAvatar={{ source: { uri: baseUrl + item.image } }}
           titleStyle={{ fontWeight: "bold" }}
         />
       );
     };
-    return (
-      <ScrollView>
-        <View>
-          <History data={this.state.history} />
-        </View>
-        <View>
+
+    if (this.props.leaders.isLoading) {
+      return (
+        <ScrollView>
+          <History />
           <Card title="Corporate Leadership">
-            <FlatList
-              data={this.state.leaders}
-              renderItem={renderMenuItem}
-              keyExtractor={item => item.id.toString()}
-            />
+            <Loading />
           </Card>
-        </View>
-      </ScrollView>
-    );
+        </ScrollView>
+      );
+    } else if (this.props.leaders.errMess) {
+      return (
+        <ScrollView>
+          <History />
+          <Card title="Corporate Leadership">
+            <Text>{this.props.leaders.errMess}</Text>
+          </Card>
+        </ScrollView>
+      );
+    } else {
+      return (
+        <ScrollView>
+          <View>
+            <History data={this.state.history} />
+          </View>
+          <View>
+            <Card title="Corporate Leadership">
+              <FlatList
+                data={this.props?.leaders?.leaders}
+                renderItem={renderMenuItem}
+                keyExtractor={item => item.id.toString()}
+              />
+            </Card>
+          </View>
+        </ScrollView>
+      );
+    }
   }
 }
 
-export default AboutComponent;
+const mapStateToProps = state => {
+  return {
+    leaders: state.leaders
+  };
+};
+
+export default connect(mapStateToProps)(AboutComponent);
