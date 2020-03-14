@@ -5,7 +5,8 @@ import { LEADERS } from "../data/leaders";
 import { FlatList, ScrollView } from "react-native-gesture-handler";
 import { connect } from "react-redux";
 import { baseUrl } from "../utils/baseUrl";
-import {Loading} from "./LoadingComponent";
+import { Loading } from "./LoadingComponent";
+import * as Animatable from "react-native-animatable";
 
 const History = ({ data }) => (
   <Card title="Our History">
@@ -52,27 +53,27 @@ class AboutComponent extends Component {
     } else if (this.props.leaders.errMess) {
       return (
         <ScrollView>
-          <History />
-          <Card title="Corporate Leadership">
-            <Text>{this.props.leaders.errMess}</Text>
-          </Card>
+          <Animatable.View animation="fadeInDown" duration={1000} delay={1000}>
+            <History data={this.state.history} />
+            <Card title="Corporate Leadership">
+              <Text>{this.props.leaders.errMess}</Text>
+            </Card>
+          </Animatable.View>
         </ScrollView>
       );
     } else {
       return (
         <ScrollView>
-          <View>
+          <Animatable.View animation="fadeInDown" duration={2000} delay={500}>
             <History data={this.state.history} />
-          </View>
-          <View>
             <Card title="Corporate Leadership">
               <FlatList
-                data={this.props?.leaders?.leaders}
+                data={this.props.leaders.leaders}
                 renderItem={renderMenuItem}
                 keyExtractor={item => item.id.toString()}
               />
             </Card>
-          </View>
+          </Animatable.View>
         </ScrollView>
       );
     }

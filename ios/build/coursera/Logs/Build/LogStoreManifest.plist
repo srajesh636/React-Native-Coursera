@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>C20277E5-C389-4CEA-A641-29A3C496AE3C</key>
+		<key>8B53E6D2-2BDB-43C7-B5DB-6051C69A4881</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>C20277E5-C389-4CEA-A641-29A3C496AE3C.xcactivitylog</string>
+			<string>8B53E6D2-2BDB-43C7-B5DB-6051C69A4881.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>605039997.40312195</real>
+			<real>605899737.48965597</real>
 			<key>timeStoppedRecording</key>
-			<real>605039998.51698899</real>
+			<real>605899738.48384297</real>
 			<key>title</key>
 			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>C20277E5-C389-4CEA-A641-29A3C496AE3C</string>
-		</dict>
-		<key>F0CD7263-62F7-48F6-86B9-86A7C74AE44F</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F0CD7263-62F7-48F6-86B9-86A7C74AE44F.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>coursera project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>coursera</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>605466013.58532596</real>
-			<key>timeStoppedRecording</key>
-			<real>605466014.66817403</real>
-			<key>title</key>
-			<string>Building workspace coursera with scheme coursera and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>F0CD7263-62F7-48F6-86B9-86A7C74AE44F</string>
+			<string>8B53E6D2-2BDB-43C7-B5DB-6051C69A4881</string>
 		</dict>
 	</dict>
 </dict>
